@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 const nedb = require('nedb');
 const db = new nedb({filename: 'restaurant.db', autoload: true});
-const router = require('./Controllers/restaurantRouter');
-
+const router = require('./routes/restaurantRouter');
+const path = require('path');
+const public = path.join(__dirname,'public'); app.use(express.static(public));
+ 
 
 
 app.use('/', router);
