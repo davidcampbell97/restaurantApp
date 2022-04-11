@@ -2,6 +2,7 @@
   "dependencies": {
     "express": "^4.17.3",
     "mustache": "^4.2.0",
-    "nedb": "^1.8.0"
+    "nedb": "^1.8.0",
+    "path": "^0.12.7"
   }
 }
